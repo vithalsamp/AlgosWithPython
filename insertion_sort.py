@@ -12,6 +12,6 @@ def insertion_sort(arr):
         arr[j+1] = key
         #print arr
 
-arr = [4,2,1,3,5,4]
+arr = [4,2,1,3,5,4,1]
 insertion_sort(arr)
 print arr
