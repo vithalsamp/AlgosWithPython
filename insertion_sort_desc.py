@@ -1,4 +1,4 @@
-# Insertion sort Algorithm in Python
+# Insertion sort Algorithm in Python -  Sort Value sin descending order
 def insertion_sort(arr):
     for i in range(1,len(arr)):
         # previous value from array list
