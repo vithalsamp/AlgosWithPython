@@ -58,7 +58,7 @@ def merge_sort(arr,p,r):
 
 
 # Main program
-arr = [100, 5]
+arr = [10, 30, 1, 34, 54, 63, 5, 6, 7, 3]
 
 merge_sort(arr, 0, len(arr)-1)
 
