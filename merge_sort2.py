@@ -2,8 +2,6 @@
 def merge(arr, p, q, r):
     n1 = q - p + 1
     n2 = r- q
-    print n1
-    print n2
 
     # create temp arrays
     L = [0] * (n1)
@@ -49,7 +47,7 @@ def merge(arr, p, q, r):
 def merge_sort(arr,p,r):
     if p < r:
 
-        q = (p+r)/2
+        q = ((p+r))//2
 
         # Sort first and second halves
         merge_sort(arr, p, q)
@@ -62,6 +60,6 @@ arr = [10, 30, 1, 34, 54, 63, 5, 6, 7, 3]
 
 merge_sort(arr, 0, len(arr)-1)
 
-print ("\nSorted array is")
+print("\nSorted array is")
 for i in range(len(arr)):
-    print ("%d" %arr[i]),
+    print("%d" %arr[i]),
