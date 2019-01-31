@@ -1,4 +1,4 @@
-# Python program for implementation of MergeSort
+# Python program for implementation of MergeSort - Python way
 def merge_sort(arr):
     if len(arr) > 1:
         mid = len(arr) // 2  # Finding the mid of the array
