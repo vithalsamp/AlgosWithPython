@@ -7,7 +7,7 @@ def merge_insertion_sort(arr):
         R = arr[:mid]
 
 
-        # Set some default length of sub-arrays to use insertion sort
+        # Set threshold length of sub-arrays to use insertion sort
         # divide array if it is greater then 10
         if len(L) > 10:
             merge_insertion_sort(L)
