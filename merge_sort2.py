@@ -1,9 +1,9 @@
 # Implement original Merge sort algorithms
+# Worst case theta(n lg n)
 def merge(arr, p, q, r):
     n1 = q - p + 1
     n2 = r- q
 
-    # create temp arrays
     L = [0] * (n1)
     R = [0] * (n2)
 

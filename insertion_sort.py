@@ -1,4 +1,5 @@
 # Insertion sort Algorithm in Python
+# Worst case theta(n2)
 def insertion_sort(arr):
     for i in range(1,len(arr)):
         # previous value from array list
@@ -14,4 +15,4 @@ def insertion_sort(arr):
 
 arr = [4,2,1,3,5,4,1]
 insertion_sort(arr)
-print arr
+print(arr)
