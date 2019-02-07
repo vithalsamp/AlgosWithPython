@@ -5,7 +5,7 @@ def find_max_crossing_subarray(arr, low, mid, high):
     # max sum in LEFT subarray
     left_sum = -9999999999999999
     sum = 0
-    for i in range(mid, 0, -1):
+    for i in range(mid, low-1, -1):
         sum = sum + arr[i]
         if sum > left_sum:
             left_sum = sum
@@ -14,7 +14,7 @@ def find_max_crossing_subarray(arr, low, mid, high):
     # max sum in RIGHT subarray
     right_sum = -9999999999999999
     sum = 0
-    for j in range(mid+1, len(arr)):
+    for j in range(mid+1, high+1):
         sum = sum + arr[j]
         if sum > right_sum:
             right_sum = sum
@@ -27,10 +27,10 @@ def find_max_subarray(arr, low, high):
     if high == low:
         return low, high, arr[low]
     else:
-        mid = int(((low + high)/2))
+        mid = int(((low + high)//2))
         left_low, left_high, left_sum = find_max_subarray(arr, low, mid)
         right_low, right_high, right_sum = find_max_subarray(arr, mid+1, high)
-        cross_low, cross_high, cross_sum = find_max_crossing_subarray(arr, low, len(arr)/2, high)
+        cross_low, cross_high, cross_sum = find_max_crossing_subarray(arr, low, mid, high)
 
         if left_sum >= right_sum and left_sum >= cross_sum:
             return left_low, left_high, left_sum
@@ -41,6 +41,8 @@ def find_max_subarray(arr, low, high):
 
 
 # Main program
-arr = [13, -3, -25, 20, -3, -16, -23, 18, 20, -7, 12, -5, -22, 15, -4, 7]
+#arr = [13, -3, -25, 20, -3, -16, -23, 18, 20, -7, 12, -5, -22, 15, -4, 7]
+#arr = [-23, 18, 20, -7, 12, -5]
+arr = [-2, -5, 6, -2, -3, 1, 5, -6]
 a, b, c = find_max_subarray(arr, 0, len(arr)-1)
-print a, b, c
+print(a, b, c)
