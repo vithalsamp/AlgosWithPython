@@ -10,4 +10,5 @@ Below are the list of algorithms that are Implemented:
 * Bubble sort
 * Merge Sort
 * Implement Maximum Sub-array problem. Identify when to buy and sell stocks to maximize profit.
+* Implement Maximum Sub-array problem using brute force.
 
