@@ -11,5 +11,5 @@ Below are the list of algorithms that are Implemented:
 * Merge Sort
 * Implement Maximum Sub-array problem. Identify when to buy and sell stocks to maximize profit.
 * Implement Maximum Sub-array problem using brute force.
-* Original Heap Sory algorithm
+* Original Heap Sort algorithm, Includes, max_heapify, min_heapify, build max_heap, build_min heap, heap_sort
 
