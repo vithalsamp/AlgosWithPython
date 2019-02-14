@@ -71,8 +71,8 @@ def heap_sort(arr):
 arr = [4, 1, 3, 2, 16, 9, 10, 14, 11, 13, 8, 12, 15, 7]
 # arr = [27, 17, 3, 16, 13, 10, 1, 5, 7, 12, 4, 8, 9, 0]
 
-print('Given Array:', arr)
+#print('Given Array:', arr)
 # Heap Sort function
-heap_sort(arr)
+#heap_sort(arr)
 
-print('Sorted Array:', arr)
+#print('Sorted Array:', arr)
