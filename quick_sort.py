@@ -22,5 +22,6 @@ def quick_sort(arr, p, r):
 
 # Main program
 arr = [2, 8, 7, 1, 3, 5, 6, 4]
+print('Original Array:', arr)
 quick_sort(arr, 0, len(arr)-1)
-print arr
+print('Sorted Array:',arr)
