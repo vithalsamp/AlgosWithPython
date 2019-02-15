@@ -12,4 +12,6 @@ Below are the list of algorithms that are Implemented:
 * Implement Maximum Sub-array problem. Identify when to buy and sell stocks to maximize profit.
 * Implement Maximum Sub-array problem using brute force.
 * Original Heap Sort algorithm, Includes, max_heapify, min_heapify, build max_heap, build_min heap, heap_sort
+* Original max priority queue implementation using heap in Python
+* Original Quick Sort algorithm
 
