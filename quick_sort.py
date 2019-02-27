@@ -1,3 +1,4 @@
+import random
 # Implementing original quick sort algorithm
 
 def quick_sort_partition(arr, p, r):
@@ -20,8 +21,20 @@ def quick_sort(arr, p, r):
         quick_sort(arr, q+1, r)
 
 
+def randomized_partition(arr, p, r):
+    i = random.randint(p, r)
+    arr[r], arr[i] = arr[i], arr[r]
+    return quick_sort_partition(arr, p, r)
+
+def randomized_quicksort(arr, p, r):
+    if p < r:
+        q = randomized_partition(arr, p, r)
+        randomized_quicksort(arr, p, q-1)
+        randomized_quicksort(arr, q+1, r)
+
 # Main program
 arr = [2, 8, 7, 1, 3, 5, 6, 4]
 print('Original Array:', arr)
-quick_sort(arr, 0, len(arr)-1)
+#quick_sort(arr, 0, len(arr)-1)
+randomized_quicksort(arr, 0, len(arr)-1)
 print('Sorted Array:',arr)
